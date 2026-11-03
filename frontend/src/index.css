@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  background-color: #111111;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #111111;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+input, select, textarea, button {
+  font: inherit;
+}
+
+.section-shell {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card-surface {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm;
+}
+
+.primary-button {
+  @apply inline-flex items-center justify-center rounded-xl bg-amber px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber/90 focus:outline-none focus:ring-2 focus:ring-amber/70;
+}
+
+.secondary-button {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/15 bg-transparent px-5 py-3 font-semibold text-white transition hover:border-amber hover:text-amber focus:outline-none focus:ring-2 focus:ring-amber/70;
+}
+
+.eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.3em] text-amber;
+}
